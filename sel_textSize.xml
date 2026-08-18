@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Commands>
+	<Command name="JavaScript" pauseBefore="false" promptUser="false" label="sel_textSize" tooltip="Execute JavaScript" ID="5e3bd3122f674d98a862b4c22bc5e585">
+		<Items>
+			<Item name="ScriptCode" type="text" value="var p = selectedAnnots[0].getProps();&#xD;&#xA;p.richContents[0].textSize = Number(app.response(&quot;input size&quot;, &quot;&quot;, &quot;8&quot;));&#xD;&#xA;selectedAnnots[0].setProps(p);"/>
+			<Item name="ScriptName" type="text" value=""/>
+		</Items>
+	</Command>
+</Commands>

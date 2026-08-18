@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Commands>
+	<Command name="JavaScript" pauseBefore="false" promptUser="false" label="sel_fillColor" tooltip="Execute JavaScript" ID="247ce080dc5e49f7980f795ed8e5bb5">
+		<Items>
+			<Item name="ScriptCode" type="text" value="var response = app.alert(&quot;Choose Color:\n\n[Yes] = Magenta (1,0,1)\n[No] = Yellow (1,1,0)\n[Cancel] = Cyan (0,1,1)&quot;, 2, 3);&#xD;&#xA;&#xD;&#xA;var color;&#xD;&#xA;if (response == 4) {       // Yes clicked&#xD;&#xA;  color = [1, 0, 1];&#xD;&#xA;} else if (response == 3) { // No clicked&#xD;&#xA;  color = [1, 1, 0];&#xD;&#xA;} else if (response == 2) { // Cancel clicked&#xD;&#xA;  color = [0, 1, 1];&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (response !== 0) {&#xD;&#xA;    selectedAnnots[0].setProps({&#xD;&#xA;        fillColor: [&quot;RGB&quot;].concat(color),&#xD;&#xA;        opacity: 0.30499267578125,&#xD;&#xA;        width: 0&#xD;&#xA;});&#xD;&#xA;}"/>
+			<Item name="ScriptName" type="text" value=""/>
+		</Items>
+	</Command>
+</Commands>

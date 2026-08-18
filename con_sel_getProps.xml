@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Commands>
+	<Command name="JavaScript" pauseBefore="false" promptUser="false" label="con_sel_getProps" tooltip="Execute JavaScript" ID="3b09f40cc5244f7a4fd4128bda75350">
+		<Items>
+			<Item name="ScriptCode" type="text" value="console.println(JSON.stringify(selectedAnnots[0].getProps(),0,2));&#xD;&#xA;console.show();&#xD;&#xA;"/>
+			<Item name="ScriptName" type="text" value=""/>
+		</Items>
+	</Command>
+</Commands>

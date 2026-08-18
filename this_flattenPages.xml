@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Commands>
+	<Command name="JavaScript" pauseBefore="false" promptUser="true" label="this_flattenPages" tooltip="Execute JavaScript" ID="675aa7ab7a954e749ae8101904edc7">
+		<Items>
+			<Item name="ScriptCode" type="text" value="this.flattenPages();"/>
+		</Items>
+	</Command>
+</Commands>

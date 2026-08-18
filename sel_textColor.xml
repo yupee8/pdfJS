@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Commands>
+	<Command name="JavaScript" pauseBefore="false" promptUser="false" label="sel_textColor" tooltip="Execute JavaScript" ID="f4f14ab497604b12bf86ac88ec1f186e">
+		<Items>
+			<Item name="ScriptCode" type="text" value="var p = selectedAnnots[0].getProps();&#xD;&#xA;p.richContents[0].textColor = [&quot;RGB&quot;].concat(app.response(&quot;input color (r,g,b)&quot;, &quot;&quot;, &quot;1,0,0&quot;).split(&quot;,&quot;).map(Number));&#xD;&#xA;selectedAnnots[0].setProps(p);"/>
+			<Item name="ScriptName" type="text" value=""/>
+		</Items>
+	</Command>
+</Commands>
