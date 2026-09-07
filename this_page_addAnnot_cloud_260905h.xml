@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Commands>
+	<Command name="JavaScript" pauseBefore="false" promptUser="false" label="this.page_addAnnot_cloud_260905h" tooltip="this.page_addAnnot_cloud_260905h" ID="c656f71c3c2f41408ffb9d5f5e814a5e">
+		<Items>
+			<Item name="ScriptCode" type="text" value="var vpage=this.pageNum,vbox=this.getPageBox(&quot;Crop&quot;,vpage);&#xD;&#xA;&#xD;&#xA;var vbei=app.response({cQuestion:&quot;Border Effect Intensity:&quot;,cTitle:&quot;Cloudy Border&quot;,cDefault:&quot;0.5&quot;});&#xD;&#xA;if(vbei===null)exit;&#xD;&#xA;vbei=Number(vbei);&#xD;&#xA;&#xD;&#xA;var vwidth=app.response({cQuestion:&quot;Border Width:&quot;,cTitle:&quot;Cloudy Border&quot;,cDefault:&quot;0.75&quot;});&#xD;&#xA;if(vwidth===null)exit;&#xD;&#xA;vwidth=Number(vwidth);&#xD;&#xA;&#xD;&#xA;this.addAnnot({&#xD;&#xA;&#x9;page:vpage,&#xD;&#xA;&#x9;type:&quot;Square&quot;,&#xD;&#xA;&#x9;rect:(new Matrix2D).fromRotated(this,vpage).transform([10,10,vbox[2]-10,vbox[1]-10]),&#xD;&#xA;&#x9;strokeColor:color.red,&#xD;&#xA;&#x9;fillColor:color.transparent,&#xD;&#xA;&#x9;width:vwidth,&#xD;&#xA;&#x9;borderEffectStyle:&quot;C&quot;,&#xD;&#xA;&#x9;borderEffectIntensity:vbei,&#xD;&#xA;&#x9;author:&quot;U355691&quot;,&#xD;&#xA;&#x9;opacity:1,&#xD;&#xA;&#x9;subject:&quot;cloud&quot;&#xD;&#xA;});"/>
+			<Item name="ScriptName" type="text" value=""/>
+		</Items>
+	</Command>
+</Commands>

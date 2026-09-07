@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Commands>
+	<Command name="JavaScript" pauseBefore="false" promptUser="false" label="this.page_addAnnot_highlight_260905h" tooltip="sel_Page_addAnnot_highlight_260905h" ID="b9442890aacb435ba9a15b7f9b4dece2">
+		<Items>
+			<Item name="ScriptCode" type="text" value="var vpage=this.pageNum;&#xD;&#xA;var vbox=this.getPageBox(&quot;Crop&quot;,vpage);&#xD;&#xA;this.addAnnot({&#xD;&#xA;&#x9;page:vpage,&#xD;&#xA;&#x9;type:&quot;Square&quot;,&#xD;&#xA;&#x9;rect:(new Matrix2D).fromRotated(this,vpage).transform([10,10,vbox[2]-10,vbox[1]-10]),&#xD;&#xA;&#x9;strokeColor:color.red,&#xD;&#xA;&#x9;fillColor:[&quot;RGB&quot;,1,0,1],&#xD;&#xA;&#x9;borderEffectStyle:&quot;S&quot;,&#xD;&#xA;&#x9;author:&quot;U355691&quot;,&#xD;&#xA;&#x9;opacity:0.30499267578125,&#xD;&#xA;&#x9;subject:&quot;highlight&quot;&#xD;&#xA;});"/>
+			<Item name="ScriptName" type="text" value=""/>
+		</Items>
+	</Command>
+</Commands>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Commands>
+	<Command name="JavaScript" pauseBefore="false" promptUser="false" label="this.saveAs_260905h" tooltip="this.saveAs_260905h" ID="41387906bcf54d4d9bd6d5c78dc17f4">
+		<Items>
+			<Item name="ScriptCode" type="text" value="var n = app.alert(&quot;Choose filename:\n\nYes = _n1\n\nNo = _o1\n\nCancel = Type custom name&quot;, 3, 3, &quot;Save As&quot;);&#xD;&#xA;var f = &quot;&quot;;&#xD;&#xA;&#xD;&#xA;if (n === 4) {&#xD;&#xA;    f = &quot;_n1&quot;;&#xD;&#xA;} else if (n === 3) {&#xD;&#xA;    f = &quot;_o1&quot;;&#xD;&#xA;} else if (n === 2) {&#xD;&#xA;    f = app.response(&quot;Enter file name:&quot;, &quot;Save As&quot;, &quot;_n1&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (f) {&#xD;&#xA;    this.saveAs(&quot;/c/jo/diff/&quot; + f + &quot;.pdf&quot;);&#xD;&#xA;    app.alert(f + &quot;.pdf Saved!&quot;, 3);&#xD;&#xA;}"/>
+			<Item name="ScriptName" type="text" value=""/>
+		</Items>
+	</Command>
+</Commands>
